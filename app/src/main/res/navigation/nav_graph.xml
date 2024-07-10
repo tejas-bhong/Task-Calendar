@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calendarFragment">
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.tejasbhong.calendar.feature.calendar.presentation.CalendarFragment"
+        android:label="@string/calendar_fragment_label"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.tejasbhong.calendar.feature.tasks.presentation.TasksFragment"
+        android:label="@string/tasks_fragment_label"
+        tools:layout="@layout/fragment_tasks" >
+        <argument
+            android:name="selectedDate"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_tasksFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.tejasbhong.calendar.feature.add_task.presentation.AddTaskFragment"
+        android:label="@string/add_task_fragment_label"
+        tools:layout="@layout/fragment_add_task" >
+        <argument
+            android:name="selectedDate"
+            app:argType="long" />
+    </fragment>
+</navigation>

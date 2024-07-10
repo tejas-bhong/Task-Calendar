@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="calendar_fragment_label">Calendar</string>
+    <string name="tasks_fragment_label">Tasks</string>
+    <string name="previous_month">Previous Month</string>
+    <string name="next_month">Next Month</string>
+    <string name="add_task">Add Task</string>
+    <string name="no_tasks">No Tasks</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="save_task">Save Task</string>
+    <string name="add_task_fragment_label">Add Task</string>
+    <string name="invalid">Invalid</string>
+    <string name="task_saved">Task Saved</string>
+    <string name="ok">OK</string>
+    <string name="saving">Saving…</string>
+    <string name="an_error_occurred">An Error Occurred</string>
+    <string name="check_your_internet_connection">Check your internet connection</string>
+    <string name="task_deleted">Task Deleted</string>
+    <string name="select_month_year">Select Month and Year</string>
+</resources>
